@@ -165,8 +165,8 @@ export default {
         .replace(/\B(?=(\d{3})+(?!\d))/g, ",");
     },
     change() {
-      this.form.limitTo = this.form.limitTo.replace(/(.00)$/g, "");
-      this.form.limitTo = this.form.limitTo.replace(/,/g, "");
+      this.form.limitTo = this.form.limitTo.toString().replace(/(.00)$/g, "");
+      this.form.limitTo = this.form.limitTo.toString().replace(/,/g, "");
     },
   },
 };
